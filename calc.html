@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+<!-- Start of CSS Style Tag-->
+    <style>
+        #main{
+            background-color: #219EBC; height: 500px; width: 585px; margin-left: 30%; margin-top: 5%; border-radius: 5px;
+        }
+        input{
+            margin: 5px; font-size: 40px; width: 100px; height:60px; margin: 20px; background-color: #023047; color: #ffb703; border-radius: 10px;
+        }
+        #bar{
+            text-align: left; display: inline-block; width: 90%; background-color: #415a77; 
+        }
+        h1{
+            text-align: center; 
+        }
+        body{
+            background-color: #8ecae6;
+        }
+
+    </style>
+<!-- End of CSS Style Tag-->
+
+<!-- Start of JS Script tag-->
+
+    <script>
+        function add(){
+            var val = 0, op = 0;
+            val = f1.bar.value;
+            op = val.charAt(val.length-1);
+
+            if (op == '+' || op == '-' || op == '*' || op == '/'){
+                f1.bar.value = val.substring(0,val.length-1);
+                f1.bar.value += '+';
+            }
+            else{
+                f1.bar.value += '+';
+            }
+        }
+
+        function sub(){
+            var val = 0, op = 0;
+            val = f1.bar.value;
+            op = val.charAt(val.length-1);
+
+            if (op == '+' || op == '-' || op == '*' || op == '/'){
+                f1.bar.value = val.substring(0,val.length-1);
+                f1.bar.value += '-';
+            }
+            else{
+                f1.bar.value += '-';
+            }
+        }
+
+        function mul(){
+            var val = 0, op = 0;
+            val = f1.bar.value;
+            op = val.charAt(val.length-1);
+
+            if (op == '+' || op == '-' || op == '*' || op == '/'){
+                f1.bar.value = val.substring(0,val.length-1);
+                f1.bar.value += '*';
+            }
+            else{
+                f1.bar.value += '*';
+            }
+        }
+
+        function divi(){
+            var val = 0, op = 0;
+            val = f1.bar.value;
+            op = val.charAt(val.length-1);
+
+            if (op == '+' || op == '-' || op == '*' || op == '/'){
+                f1.bar.value = val.substring(0,val.length-1);
+                f1.bar.value += '/';
+            }
+            else{
+                f1.bar.value += '/';
+            }
+        }
+    </script>
+<!-- End of JS Script Tag-->
+</head>
+
+
+<body>
+    <h1>Simple Calculator</h1>
+    <div id="main">
+        <form name="f1">
+            <input type="text" id="bar" placeholder="0">
+            <br>
+            <input type="button" value="7" onclick="f1.bar.value+=7">
+            <input type="button" value="8" onclick="f1.bar.value+=8">
+            <input type="button" value="9" onclick="f1.bar.value+=9">
+            <input type="button" value="+" onclick="add()">
+            <br>
+            <input type="button" value="4" onclick="f1.bar.value+=4">
+            <input type="button" value="5" onclick="f1.bar.value+=5">
+            <input type="button" value="6" onclick="f1.bar.value+=6"> 
+            <input type="button" value="-" onclick="sub()">
+            <br>
+            <input type="button" value="1" onclick="f1.bar.value+=1">
+            <input type="button" value="2" onclick="f1.bar.value+=2">
+            <input type="button" value="3" onclick="f1.bar.value+=3">
+            <input type="button" value="x" onclick="mul()">
+            <br>
+            <input type="button" value="0" onclick="f1.bar.value+=0">
+            <input type="button" value="c" onclick="f1.bar.value=''">
+            <input type="button" value="=" onclick="f1.bar.value= eval(f1.bar.value)">
+            <input type="button" value="/" onclick="divi()">
+        </form>
+    </div>
+</body>
+</html>
