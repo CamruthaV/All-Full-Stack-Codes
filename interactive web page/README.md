@@ -1,1 +1,1 @@
-I'll try to add the images and stuff here as soon as i figure things out
+This is an interactive web page on Star Nomenclature. Just something i did in my spare time with a few changes
