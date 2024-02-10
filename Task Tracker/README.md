@@ -1,1 +1,2 @@
-Simple Task Tracker using HTML, CSS and JavaScript
+# Simple Task Tracker 
+Using HTML, CSS and JavaScript
