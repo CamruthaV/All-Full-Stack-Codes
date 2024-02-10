@@ -1,1 +1,2 @@
-Grade calculator
+# Grade calculator
+Made using HTML, CSS, JavaScript
